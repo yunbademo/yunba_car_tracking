@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" value="IE=9">
+    <title> yunba car </title>
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="css/mapbox.css"        rel="stylesheet">
+    <link href="css/page-styles.css"   rel="stylesheet">
+
+</head>
+<body>
+    <div id="mapbox"></div>
+    <div>
+        <div class="row">
+            <div class="col-xs-3 bg-teal car-stat-value-area">
+                <div id="car-stat-latitude" class="car-stat-value">
+                    22.526
+                </div>
+                <div class="car-stat-label">latitude</div>
+            </div>
+            <div class="col-xs-3 bg-yellow car-stat-value-area">
+                <div id="car-stat-longitude" class="car-stat-value">
+                    113.918
+                </div>
+                <div class="car-stat-label">longitude</div>
+            </div>
+        </div>
+    </div>
+    <!--[if lte IE 7]>
+    <script type='text/javascript' src='js/lib/json2.js'></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/lib/socket.io-1.3.5.min.js"></script>
+    <script src="js/lib/yunba-js-sdk.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+</body>
+</html>
