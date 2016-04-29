@@ -1,5 +1,5 @@
 var yunba_demo;
-var CHATROOM_TOPIC = 'yunba_car';
+var CHATROOM_TOPIC = 'linkltone';
 var map;
 var poly;
 var ctrls;
@@ -141,25 +141,11 @@ function dataController(data) {
     ret = is_valid_json(data);
     if (ret['e'] === 0) {
         var msg = JSON.parse(data);
-        if (msg.latitude !== undefined && msg.longitude !== undefined) {
-            waypoint(msg.latitude, msg.longitude);
+        if (msg.lat !== undefined && msg.log !== undefined) {
+            waypoint(parseInt(msg.lat), parseInt(msg.log));
         }
     }
     console.log(data);
-}
-
-function demo() {
-    latlong[0] += Math.random()/1000 - Math.random()/2000;
-    latlong[1] += Math.random()/1000 - Math.random()/2000;
-
-    var data = {'latitude' : latlong[0],
-        'longitude' : latlong[1]
-    };
-    publish(CHATROOM_TOPIC, JSON.stringify(data));
-}
-
-function demo_mode() {
-    setInterval(demo, 4000);
 }
 
 function init_mapbox() {
@@ -176,14 +162,11 @@ function init_mapbox() {
     }).addTo(map);
 
     ctrls.parentNode.removeChild(ctrls);
-
-    // just for test, and please comment me.
-    demo_mode();
 }
 
 function init_yunba() {
     yunba_demo = new Yunba({
-	    appkey: '5487f75052be1f7e1dd834e8'
+	    appkey: '563c4afef085fc471efdf803'
     });
     initialize();
 }
