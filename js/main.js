@@ -142,7 +142,7 @@ function dataController(data) {
     if (ret['e'] === 0) {
         var msg = JSON.parse(data);
         if (msg.lat !== undefined && msg.log !== undefined) {
-            waypoint(parseInt(msg.lat), parseInt(msg.log));
+            waypoint(parseFloat(msg.lat), parseFloat(msg.log));
         }
     }
     console.log(data);
