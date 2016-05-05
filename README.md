@@ -15,6 +15,6 @@ https://github.com/yunba/LinkltOne_Yunba.git
 demo_mode();
 ```
 
-结合 linkltone GPS　追踪器，效果如图
+结合 linkltone GPS 追踪器，效果如图
 
  ![image](https://github.com/alexbank/yunba_car/tree/for-linkltone-gps-example/image/cap.png)
