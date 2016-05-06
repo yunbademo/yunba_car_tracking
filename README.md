@@ -14,3 +14,5 @@ https://github.com/yunba/LinkltOne_Yunba.git
 ```
 demo_mode();
 ```
+
+与 linkltone 结合使用的例子在分支 for-linkltone-gps-example 。
