@@ -3,7 +3,7 @@
 
 使用云巴 js sdk 实现行车轨迹追踪
 
-可结合云巴的 linkltone 车追踪器案例
+可结合云巴的 linkltone 追踪器案例
 
 ```url
 https://github.com/yunba/LinkltOne_Yunba.git
@@ -14,3 +14,7 @@ https://github.com/yunba/LinkltOne_Yunba.git
 ```
 demo_mode();
 ```
+
+结合 linkltone GPS 追踪器，效果如图
+
+ ![image](https://raw.githubusercontent.com/alexbank/yunba_car/for-linkltone-gps-example/image/cap.png)
